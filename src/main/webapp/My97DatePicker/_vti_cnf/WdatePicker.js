@@ -1,0 +1,4 @@
+vti_encoding:SR|utf8-nl
+vti_timelastmodified:TR|28 Jul 2007 05:25:30 -0000
+vti_extenderversion:SR|6.0.2.8161
+vti_backlinkinfo:VX|Finance/prMoneyEnter.htm Project/addProject.htm Project/AttTenderNoAnalysis.htm Finance/addTicket.htm Project/AttTenderYesAnalysis.htm Project/count.htm TransportCompany/editTc.htm BaseInfo/AddSales.htm Finance/EnterSalary.htm Depot/Repart.htm Customer/AnalysisCustomerByWay.htm Contract/ContractDetail.htm Customer/seach.htm Project/editProject.htm TransportCompany/addTc.htm BaseInfo/AddProduct.htm Project/AttTenderAnalysis.htm SysAdmin/PowerAdmin.htm Contract/EditContract.htm Depot/InDepotDetails.htm SysAdmin/AddGroup.htm Contract/AddContract.htm Depot/OutDepotDetails.htm Depot/InDepotList.htm Depot/AddOutDepot.htm Finance/ProjectPrice.htm Contract/NoBackAccount.htm BaseInfo/AddArea.htm Depot/editInDepot.htm Customer/AnalysisCustomerByArea.htm Depot/OutDepotList.htm SysAdmin/AddDep.htm SysAdmin/ChangePassword.htm Depot/InDepot.htm

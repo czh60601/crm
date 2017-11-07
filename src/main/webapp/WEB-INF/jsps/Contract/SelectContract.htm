@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+  <link href="../css/cskt.css" rel="stylesheet" type="text/css" />
+</head>
+<BODY onmouseover="window.status='none';return true;" bgColor=#ebebeb>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top width="100%">
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" 
+      background=../images/m_mpbg.gif border=0>
+        <TBODY>
+        <TR>
+          <TD class=place>所有合同列表</TD>
+          <TD align=right><A onclick="Myopen(User);return false;" 
+            href="#">排序规则<IMG 
+            height=5 src="../images/i10.gif" width=9 border=0></A></TD>
+          <TD align=right></TD>
+          <TD width=3><IMG height=32 src="../images/m_mpr.gif" 
+        width=3></TD></TR></TBODY></TABLE>
+        <TABLE cellSpacing=0 cellPadding=0 width="100%" background=../images/m_mpbg.gif border=0>
+        <TBODY>
+        <tr>
+            <td style="height: 34px" colspan="4" class="func">
+                &nbsp;
+                合同状态：<select id="Select1" style="width: 85px">
+                    <option selected="selected">已发货的</option>
+                    <option>未发货的</option>
+                    <option>货已发完</option>
+                    <option>货未发完</option>
+                    <option>做坏账处理</option>
+                </select>&nbsp;&nbsp<input class="page" id="Button1" type="button" value="查询"  /></td>
+        </tr>
+       </TBODY></TABLE>
+      <TABLE id=content cellSpacing=1 cellPadding=6 width="100%" bgColor=#c0ccdd 
+      border=0>
+        <FORM name=form1 
+        action="#" 
+        method=post>
+        <TBODY>
+        <TR class=top>
+          <TD align=middle>
+            <DIV align=center><STRONG>选择</STRONG></DIV></TD>
+          <TD align=middle width="29%" height=27>
+            <DIV align=center><STRONG><SELECT 
+            style="BORDER-RIGHT: #ffffff 0px solid; BORDER-TOP: #ffffff 0px solid; FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #ffffff; OVERFLOW: hidden; BORDER-LEFT: #ffffff 0px solid; COLOR: #2f496e; BORDER-BOTTOM: #ffffff 0px solid; HEIGHT: 20px" 
+            onchange="if(this.selectedIndex &amp;&amp; this.selectedIndex!=0){window.open(this.value,'_self');}this.selectedIndex=0;" 
+            name=select> <OPTION>-请选择-</OPTION> <OPTION 
+              value="#" selected>合同名称</OPTION> <OPTION 
+              value="#">合同编号</OPTION></SELECT> 
+            </STRONG></DIV>
+            <DIV align=center></DIV>
+            <DIV align=center></DIV></TD>
+          <TD class=gray width="15%">
+            <DIV align=center><STRONG><SELECT 
+            style="BORDER-RIGHT: #ffffff 0px solid; BORDER-TOP: #ffffff 0px solid; FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #ffffff; OVERFLOW: hidden; BORDER-LEFT: #ffffff 0px solid; COLOR: #2f496e; BORDER-BOTTOM: #ffffff 0px solid; HEIGHT: 20px" 
+            onchange="if(this.selectedIndex &amp;&amp; this.selectedIndex!=0){window.open(this.value,'_self');}this.selectedIndex=0;" 
+            name=select2> <OPTION>-请选择-</OPTION> <OPTION 
+              value="#" selected>签订日期</OPTION> <OPTION 
+              value="#">开始日期</OPTION> <OPTION 
+              value="#">终止日期</OPTION> 
+            </SELECT></DIV>
+            <DIV align=center></DIV></TD>
+          <TD class=gray width="17%">
+            <DIV align=center><SELECT 
+            style="BORDER-RIGHT: #ffffff 0px solid; BORDER-TOP: #ffffff 0px solid; FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #ffffff; OVERFLOW: hidden; BORDER-LEFT: #ffffff 0px solid; COLOR: #2f496e; BORDER-BOTTOM: #ffffff 0px solid; HEIGHT: 20px" 
+            onchange="if(this.selectedIndex &amp;&amp; this.selectedIndex!=0){window.open(this.value,'_self');}this.selectedIndex=0;" 
+            name=select3> <OPTION>-请选择-</OPTION> <OPTION 
+              value="#" selected>合同状态</OPTION> <OPTION 
+              value="#">回款金额</OPTION> <OPTION 
+              value="#">应付金额</OPTION> 
+              </SELECT> 
+            </DIV></TD>
+          <TD><SELECT 
+            style="BORDER-RIGHT: #ffffff 0px solid; BORDER-TOP: #ffffff 0px solid; FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #ffffff; OVERFLOW: hidden; BORDER-LEFT: #ffffff 0px solid; COLOR: #2f496e; BORDER-BOTTOM: #ffffff 0px solid; HEIGHT: 20px" 
+            onchange="if(this.selectedIndex &amp;&amp; this.selectedIndex!=0){window.open(this.value,'_self');}this.selectedIndex=0;" 
+            name=select4> <OPTION>-请选择-</OPTION> <OPTION 
+              value="#" selected>我方代表</OPTION> <OPTION 
+              value="#">对方代表</OPTION></SELECT> 
+          </TD>
+          <TD class=gray width="20%">
+            <DIV align=center><SELECT 
+            style="BORDER-RIGHT: #ffffff 0px solid; BORDER-TOP: #ffffff 0px solid; FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #ffffff; OVERFLOW: hidden; BORDER-LEFT: #ffffff 0px solid; COLOR: #2f496e; BORDER-BOTTOM: #ffffff 0px solid; HEIGHT: 20px" 
+            onchange="if(this.selectedIndex &amp;&amp; this.selectedIndex!=0){window.open(this.value,'_self');}this.selectedIndex=0;" 
+            name=select5> <OPTION>-请选择-</OPTION> <OPTION 
+              value="#" selected>每页显示10条</OPTION> <OPTION 
+              value="#">每页显示20条</OPTION> <OPTION 
+              value="#">每页显示30条</OPTION> <OPTION 
+              value="#">每页显示50条</OPTION> <OPTION 
+              value="#">每页显示100条</OPTION> <OPTION 
+              value="#">每页显示200条</OPTION></SELECT> 
+            </DIV></TD></TR>
+        <TR onmouseover="this.style.backgroundColor='ecf5ff'" 
+        onmouseout="this.style.backgroundColor=''">
+          <TD align=middle width="7%"><INPUT id=selectid type=checkbox 
+            value=388 name=selectid></TD>
+          <TD height=27><A title=点击可查看此合同详情 
+            onclick="javascript:window.open('ContractDetail.htm','newwin','width=' + 800 + ',height=' + 500 + ',fullscreen =no,scrollbars=1,toolbar=0,resizable=1,left=100,top=100');return false;" 
+            href="ContractDetail.htm">新疆国宏电器有限公司</A></TD>
+          <TD class=name align=middle><A title=点击可查看此合同详情 
+            onclick="javascript:window.open('ContractDetail.htm','newwin','width=' + 800 + ',height=' + 500 + ',fullscreen =no,scrollbars=1,toolbar=0,resizable=1,left=100,top=100');return false;" 
+            href="ContractDetail.htm">2008-10-4</A></TD>
+          <TD class=name align=middle><A title=点击可查看此合同详情 
+            onclick="javascript:window.open('ContractDetail.htm','newwin','width=' + 800 + ',height=' + 500 + ',fullscreen =no,scrollbars=1,toolbar=0,resizable=1,left=100,top=100');return false;" 
+            href="ContractDetail.htm">已发货的</A></TD>
+          <TD class=name align=middle width="12%"><A title=点击可查看此合同详情 
+            onclick="javascript:window.open('ContractDetail.htm','newwin','width=' + 800 + ',height=' + 500 + ',fullscreen =no,scrollbars=1,toolbar=0,resizable=1,left=100,top=100');return false;" 
+            href="ContractDetail.htm">李高信</A></TD>
+          <TD class=func>
+            <DIV align=center><INPUT onclick="javascript:window.open('ContractDetail.htm','newwin','width=' + 800 + ',height=' + 500 + ',fullscreen =no,scrollbars=1,toolbar=0,resizable=1,left=100,top=100')" type=button value=详情 name=Submit3> 
+<INPUT onclick="javascript:window.open('EditContract.htm','newwincor','width=' + 800 + ',height=' + 500 + ',fullscreen =no,scrollbars=1,toolbar=0,resizable=1,left=100,top=100')" type=button value=修改 name=Submit3c> 
+<INPUT onclick="if(confirm('确认选择？')){window.location.href='#'}" type=button value=选择 name=Submitdel> 
+            </DIV></TD></TR>
+        <TR onmouseover="this.style.backgroundColor='ecf5ff'" 
+        onmouseout="this.style.backgroundColor=''">
+          <TD align=middle width="7%"><INPUT id=selectid type=checkbox 
+            value=364 name=selectid></TD>
+          <TD height=27><A title=点击可查看此合同详情 
+            onclick="javascript:window.open('ContractDetail.htm','newwin','width=' + 800 + ',height=' + 500 + ',fullscreen =no,scrollbars=1,toolbar=0,resizable=1,left=100,top=100');return false;" 
+            href="ContractDetail.htm">西门子国际贸易（上海）有限公司</A></TD>
+          <TD class=name align=middle><A title=点击可查看此合同详情 
+            onclick="javascript:window.open('ContractDetail.htm','newwin','width=' + 800 + ',height=' + 500 + ',fullscreen =no,scrollbars=1,toolbar=0,resizable=1,left=100,top=100');return false;" 
+            href="ContractDetail.htm">2008-9-30</A></TD>
+          <TD class=name align=middle><A title=点击可查看此合同详情 
+            onclick="javascript:window.open('ContractDetail.htm','newwin','width=' + 800 + ',height=' + 500 + ',fullscreen =no,scrollbars=1,toolbar=0,resizable=1,left=100,top=100');return false;" 
+            href="ContractDetail.htm">未发货的</A></TD>
+          <TD class=name align=middle width="12%"><A title=点击可查看此合同详情 
+            onclick="javascript:window.open('ContractDetail.htm','newwin','width=' + 800 + ',height=' + 500 + ',fullscreen =no,scrollbars=1,toolbar=0,resizable=1,left=100,top=100');return false;" 
+            href="ContractDetail.htm">李高信</A></TD>
+          <TD class=func>
+            <DIV align=center><INPUT onclick="javascript:window.open('ContractDetail.htm','newwin','width=' + 800 + ',height=' + 500 + ',fullscreen =no,scrollbars=1,toolbar=0,resizable=1,left=100,top=100')" type=button value=详情 name=Submit3> 
+<INPUT onclick="javascript:window.open('EditContract.htm','newwincor','width=' + 800 + ',height=' + 500 + ',fullscreen =no,scrollbars=1,toolbar=0,resizable=1,left=100,top=100')" type=button value=修改 name=Submit3c> 
+<INPUT onclick="if(confirm('确认选择？')){window.location.href='#'}" type=button value=选择 name=Submitdel> 
+            </DIV></TD></TR>
+        </TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=page>
+      <TABLE width="100%" align=left border=0>
+        <TBODY>
+        <TR>
+          <TD width="10%" height=30>
+            <DIV align=center>全选 <INPUT onclick=mm() type=checkbox 
+            value="Check All" name=checkbox2> </DIV></TD>
+          <TD><INPUT class=page type=button value=批量选择 name=Submit44> </TD>
+          <TD width="79%">
+            <DIV align=right>33个 | 1/4页 | &nbsp;10条信息/页&nbsp;&nbsp; <INPUT class=page type=button value=首页 name=Submit4> <INPUT class=page type=button value=上一页 name=Submit42> <INPUT class=page onclick="window.location.href='#'" type=button value=下一页 name=Submit43> 
+<INPUT class=page onclick="window.location.href='#'" type=button value=尾页 name=Submit43> 
+            </DIV></TD></TR>
+        <SCRIPT language=javascript>
+function test()
+{
+  if(!confirm('确认删除吗？')) return false;
+}
+ 
+function mm()
+{
+   var a = document.getElementsByTagName("input");
+   if(a[0].checked==true){
+   for (var i=0; i<a.length; i++)
+      if (a[i].type == "checkbox") a[i].checked = false;
+   }
+   else
+   {
+   for (var i=0; i<a.length; i++)
+      if (a[i].type == "checkbox") a[i].checked = true;
+   }
+}
+</SCRIPT>
+
+        <TR>
+          <TD colSpan=3 height=38>
+            <DIV align=right>
+            <P> </P></DIV></TD></TR></TBODY></TABLE></FORM></TD></TR></TBODY></TABLE>
+<SCRIPT language=javascript>
+function Myopen(divID){ //根据传递的参数确定显示的层
+	if(divID.style.display==""){
+		divID.style.display="none"
+	}else{
+		divID.style.display=""
+	}
+	divID.style.left=300;
+	divID.style.top=0;
+}
+</SCRIPT>
+
+<DIV id=User 
+style="DISPLAY: none; WIDTH: 100%; POSITION: absolute; HEIGHT: 400px">
+<TABLE height=350 cellSpacing=-2 cellPadding=-2 width=150 border=0>
+  <TBODY>
+  <TR>
+    <TD height=139>
+      <TABLE height=115 width=150 bgColor=#ecf5ff border=0>
+        <TBODY>
+        <TR vAlign=center>
+          <TD colSpan=2 height=24>&nbsp;&nbsp;<A 
+            href="#"><FONT 
+            color=#2f496e>按合同主题排序(降)</FONT></A> </TD></TR>
+        <TR vAlign=center>
+          <TD colSpan=2 height=24>&nbsp;&nbsp;<A 
+            href="#"><FONT 
+            color=#2f496e>按合同主题排序(升)</FONT></A> </TD></TR>
+        <TR vAlign=center>
+          <TD colSpan=2 height=24>&nbsp;&nbsp;<A 
+            href="#"><FONT 
+            color=#2f496e>按合同编号排序(降)</FONT></A> </TD></TR>
+        <TR vAlign=center>
+          <TD colSpan=2 height=24>&nbsp;&nbsp;<A 
+            href="#"><FONT 
+            color=#2f496e>按合同编号排序(升)</FONT></A> </TD></TR>
+        <TR vAlign=center>
+          <TD colSpan=2 height=24>&nbsp;&nbsp;<A 
+            href="#"><FONT 
+            color=#2f496e>按合同总额排序(降)</FONT></A> </TD></TR>
+        <TR vAlign=center>
+          <TD colSpan=2 height=24>&nbsp;&nbsp;<A 
+            href="#"><FONT 
+            color=#2f496e>按合同总额排序(升)</FONT></A></TD></TR>
+        <TR vAlign=center>
+          <TD colSpan=2 height=24>&nbsp;&nbsp;<A 
+            href="#"><FONT 
+            color=#2f496e>按预计金额排序(降)</FONT></A> </TD></TR>
+        <TR vAlign=center>
+          <TD colSpan=2 height=24>&nbsp;&nbsp;<A 
+            href="#"><FONT 
+            color=#2f496e>按预计金额排序(升)</FONT></A></TD></TR>
+        <TR vAlign=center>
+          <TD colSpan=2 height=24>&nbsp;&nbsp;<A 
+            href="#"><FONT 
+            color=#2f496e>按添加日期排序(降)</FONT></A> </TD></TR>
+        <TR vAlign=center>
+          <TD colSpan=2 height=24>&nbsp;&nbsp;<A 
+            href="#"><FONT 
+            color=#2f496e>按添加日期排序(升)</FONT></A> </TD></TR>
+        <TR vAlign=center>
+          <TD colSpan=2 height=24>&nbsp;&nbsp;<A 
+            href="#"><FONT 
+            color=#2f496e>按发现日期排序(降)</FONT></A> </TD></TR>
+        <TR vAlign=center>
+          <TD colSpan=2 height=24>&nbsp;&nbsp;<A 
+            href="#"><FONT 
+            color=#2f496e>按发现日期排序(升)</FONT></A> 
+  </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></BODY>       
+</html>

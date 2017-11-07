@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>�����Ŀ</title>
+    <link href="../css/cskt.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript" src="../My97DatePicker/WdatePicker.js"></script>
+</head>
+
+<body onresize=fixPositions()>
+<table width="100%"  border="0" align="left" cellpadding="0" cellspacing="0" bordercolor="#E2E2E1" bgcolor="#FFFFFF">
+<tr>
+    <td width="100%" valign="top">
+
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" background="../images/m_mpbg.gif">
+          <tr>
+            <td class="place">��ͬ��Ϣ�޸�</td>
+            <td>��</td>
+            <td align="right">��</td>
+            <td width="3"><img src="../images/m_mpr.gif" width="3" height="32" /></td>
+          </tr>
+      </table> 
+      <TABLE id=content cellSpacing=1 cellPadding=6 width="100%" bgColor=#c0ccdd 
+      border=0>
+ 	 <form method="post" action="#" id="demo" onsubmit="return Validator.Validate(this,2)" name="date">
+     <tr class="top">
+        <td height="27"><div align="right">�ͻ���ƣ�</div></td>
+        <td height="27"><IFRAME name="I2" SRC="company.htm" FRAMEBORDER="0" SCROLLING="no" WIDTH="260" HEIGHT="27" marginwidth="1" marginheight="1"></IFRAME></td>
+        <td height="27"><div align="right">��ͬ��ƣ�</div></td>
+        <td width="44%" height="27"><input name="title" type="text" size="30"  dataType="Limit" min="1" max="50"  msg="���ȱ�����1��50����֮��" >
+          <span class="red">*</span></td>
+     </tr>
+      <tr>
+        <td height="27"><div align="right">��ͬ��ţ�</div></td>
+        <td width="32%" height="27"><input name="htid" type="text" size="15" value="HT2008100603"  dataType="Limit" min="1" max="50"  msg="���ȱ�����1��50����֮��" >
+          <span class="red">*</span></td>
+        <td width="12%" height="27"><div align="right">ǩ�����ڣ�</div></td>
+        <td height="27"><input id="Text3"  class="Wdate" onFocus="new WdatePicker(this,'%Y-%M-%D',true,'default')" style="WIDTH: 108px" type="text" name="T1" size="20" /> <span class="red">*</span></td>
+      </tr>
+      <tr>
+        <td height="27"><div align="right">��ʼ���ڣ�</div></td>
+        <td height="27"><input id="Text3"  class="Wdate" onFocus="new WdatePicker(this,'%Y-%M-%D',true,'default')" style="WIDTH: 108px" type="text" name="T1" size="20" /> <span class="red">*</span></td>
+        <td height="27"><div align="right">��ֹ���ڣ�</div></td>
+        <td height="27"><input id="Text3"  class="Wdate" onFocus="new WdatePicker(this,'%Y-%M-%D',true,'default')" style="WIDTH: 108px" type="text" name="T1" size="20" /> <span class="red">*</span></td>
+        </tr>
+		<tr>
+        <td height="27"><div align="right">�ҷ���?</div></td>
+        <td height="27"><input name="person2" type="text" size="10" dataType="Limit" min="0" max="10"  msg="̫����"></td>
+        <td height="27"><div align="right">�Է���?</div></td>
+        <td height="27"><input name="person2" type="text" size="10" dataType="Limit" min="0" max="10"  msg="̫����"></td>
+        </tr>
+		<tr>
+        <td height="27"><div align="right">��ͬ״̬��</div></td>
+        <td height="27"><input name="complete1" type="radio" value="195" checked >��Чִ����
+        <input name="complete1" type="radio" value="196" >ִ�����
+        <input name="complete1" type="radio" value="197" >������ֹ</td>
+        <td height="27"><div align="right">��ͬ���ࣺ</div></td>
+        <td height="27"><span class="gray">
+          <select name="sort" class="gray">
+            
+            <option value="192">��Ʒ����</option>
+            
+            <option value="193">�������</option>
+            
+            <option value="194">�������</option>
+            
+          </select>
+        </span></td>
+        </tr> 
+	   <tr>
+		   <td height="27"><div align="right">��Ʒ��ϸ��</div></td>
+		   <td height="27" colspan="3" class="red"><IFRAME name="I3" SRC="xmmx.htm" id="mxlist" width="100%"  onload="frameResize()" scrolling=no BORDER=0 marginheight=0 marginwidth=0 frameborder=0 target="_self" ></IFRAME>
+		   </td>
+	      </tr>
+       <tr>
+        <td width="12%" height="37">
+          <div align="right">��ͬ��Ҫ��       </div></td>
+        <td height="27" colspan="3"><IFRAME ID="eWebEditor1" SRC="../editor/editor.htm" FRAMEBORDER="0" SCROLLING="no" WIDTH="100%" HEIGHT="300" marginwidth="1" marginheight="1" name="wfasdg"></IFRAME></td>
+      </tr>
+	   <tr>
+         <td height="37"><div align="right">������Ŀ��</div></td>
+         <td height="27" colspan="3"><IFRAME name="I5" SRC="project.htm" FRAMEBORDER="0" SCROLLING="no" WIDTH="500" HEIGHT="27" marginwidth="1" marginheight="1"></IFRAME></td>
+       </tr>
+      <tr>
+        <td height="27" colspan="4"><div align="center">
+          <input type="submit" name="Submit42" value="����"  class="page"/>������������          
+          <input type="reset" value="����" class="page" name="B2">
+        </div></td>
+        </tr>   
+	  </form> 
+    </table>
+	</td>
+  </tr>
+  <tr>
+  <td  class="page">
+   <table width="100%" border="0" align="left" >
+  <tr>
+    <td height="3580" ><div align="center"></div></td>
+    </tr>
+</table>
+	</td>
+  
+  </tr>
+</table>
+</body>
+</html>

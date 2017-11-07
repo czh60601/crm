@@ -1,0 +1,205 @@
+BODY
+{
+    FONT-SIZE: 10pt;
+    MARGIN: 0pt;
+    COLOR: black;
+    FONT-FAMILY: '宋体','PMingLiU'
+}
+.BORDER3
+{
+    BORDER-RIGHT: #b3b3d9 1px solid;
+    BORDER-TOP: #b3b3d9 1px solid;
+    FONT: 70% Verdana, Geneva, Arial, Helvetica, sans-serif;
+    BORDER-LEFT: #b3b3d9 1px solid;
+    WIDTH: 15em;
+    CURSOR: pointer;
+    COLOR: #ffffff;
+    BORDER-BOTTOM: #b3b3d9 1px solid;
+    BACKGROUND-COLOR: #5859ab
+}
+TABLE
+{
+    FONT-SIZE: 10pt;
+    COLOR: black;
+    FONT-FAMILY: '宋体','PMingLiU'
+}
+SELECT
+{
+    FONT-SIZE: 10pt;
+    COLOR: #3366ff;
+    BACKGROUND-COLOR: #ffffe1
+}
+.MoseOver
+{
+    CURSOR: hand
+}
+A
+{
+    COLOR: red
+}
+A:link
+{
+    COLOR: blue
+}
+A:visited
+{
+    COLOR: blue
+}
+.Title
+{
+    FONT-SIZE: 14pt;
+    WIDTH: 100%;
+    TEXT-ALIGN: center
+}
+.Link
+{
+    COLOR: blue;
+    TEXT-DECORATION: underline
+}
+.TitleDescription
+{
+    FONT-SIZE: 10pt;
+    PADDING-BOTTOM: 0.2cm;
+    PADDING-TOP: 0.2cm
+}
+.TableHeader
+{
+    FONT-SIZE: 10pt;
+    COLOR: #fff;
+    BACKGROUND-COLOR: #3c5f84
+}
+.TableHeaderBlack
+{
+    FONT-SIZE: 10pt;
+    COLOR: white;
+    BACKGROUND-COLOR: #000000
+}
+.TableTitleRequired
+{
+    FONT-SIZE: 10pt;
+    COLOR: red;
+    BACKGROUND-COLOR: #e3e3c8
+}
+.TableTitle
+{
+    FONT-SIZE: 10pt;
+    BACKGROUND-COLOR: #e3e3c8
+}
+.TableData
+{
+    BACKGROUND-COLOR: #d3d3d3
+}
+.TableOddRow
+{
+    BACKGROUND-COLOR: #e3e3e8
+}
+.TableEvenRow
+{
+    BACKGROUND-COLOR: #e3e3c8
+}
+.Display
+{
+    DISPLAY: inline
+}
+.NoDisplay
+{
+    DISPLAY: none
+}
+.ErrorMessage
+{
+    COLOR: red
+}
+.Prompt
+{
+    COLOR: red
+}
+.EnabledButton
+{
+    BORDER-RIGHT: gray 1px solid;
+    BORDER-TOP: gray 1px solid;
+    FONT-SIZE: 10pt;
+    BORDER-LEFT: gray 1px solid;
+    CURSOR: hand;
+    COLOR: black;
+    LINE-HEIGHT: 10pt;
+    PADDING-TOP: 5px;
+    BORDER-BOTTOM: gray 1px solid;
+    FONT-FAMILY: '宋体','PMingLiU';
+    BACKGROUND-COLOR: white
+}
+.DisabledButton
+{
+    BORDER-RIGHT: red 1px solid;
+    BORDER-TOP: red 1px solid;
+    FONT-SIZE: 10pt;
+    BORDER-LEFT: red 1px solid;
+    COLOR: white;
+    LINE-HEIGHT: 10pt;
+    PADDING-TOP: 5px;
+    BORDER-BOTTOM: red 1px solid;
+    FONT-FAMILY: '宋体','PMingLiU';
+    BACKGROUND-COLOR: lightgrey
+}
+.MouseOverButton
+{
+    BORDER-RIGHT: darkblue 1px solid;
+    BORDER-TOP: darkblue 1px solid;
+    FONT-SIZE: 10pt;
+    BORDER-LEFT: darkblue 1px solid;
+    CURSOR: hand;
+    COLOR: white;
+    LINE-HEIGHT: 10pt;
+    PADDING-TOP: 5px;
+    BORDER-BOTTOM: darkblue 1px solid;
+    FONT-FAMILY: '宋体','PMingLiU';
+    BACKGROUND-COLOR: #99bbee
+}
+.ColorBlue
+{
+    COLOR: blue
+}
+.ColorRed
+{
+    COLOR: red
+}
+.MouseOver
+{
+    BACKGROUND-COLOR: lightsteelblue
+}
+.MouseDown
+{
+    BACKGROUND-COLOR: deepskyblue
+}
+.Neat
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    BORDER-LEFT: medium none;
+    BORDER-BOTTOM: medium none;
+    BACKGROUND-COLOR: transparent
+}
+.FlatTextBox
+{
+    BORDER-RIGHT: #000000 1px;
+    BORDER-TOP: #000000 1px;
+    FONT-SIZE: 10pt;
+    BORDER-LEFT: #000000 1px;
+    COLOR: #3366ff;
+    BORDER-BOTTOM: #808080 1px solid;
+    FONT-FAMILY: Verdana, 宋体
+}
+.SpanTitle
+{
+    FONT-SIZE: 8pt
+}
+.StyleId
+{
+    BORDER-RIGHT: #000000 1px;
+    BORDER-TOP: #000000 1px;
+    FONT-SIZE: 10pt;
+    TEXT-TRANSFORM: uppercase;
+    BORDER-LEFT: #000000 1px;
+    COLOR: #3366ff;
+    BORDER-BOTTOM: #808080 1px solid;
+    FONT-FAMILY: Verdana, 宋体
+}
